@@ -6,163 +6,234 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
       title: "Assignment1",
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Assignment 1'),
-        ),
-        body: Container(
-          color: Colors.black,
-
-
-          child: Center(
-            child: Container(
-              height: 700,
-              width: 300,
-              decoration: BoxDecoration(
-                color: Colors.white
-              ),
-              child: Padding(
-                padding: EdgeInsets.only(left: 10,top: 10),
-                child: Column(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Icon(Icons.arrow_back),
-                        Icon(Icons.more_vert),
-                      ],
-                    ),
-                    SizedBox(height: 17,),
-                    Row(
-                      children: [
-                        Container(
-                          height: 30,
-                          width: 30,
-                          decoration: BoxDecoration(
-                            color: Colors.orange,
-                            shape: BoxShape.circle
-                          ),
-                        ),
-                        SizedBox(width: 9,),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-
-                          children: [
-
-
-                            Text('BhavtoshPathak', style: TextStyle(
-                                fontSize: 12,
-                              fontWeight: FontWeight.bold
-
-
-
-                            ),
-                            ),
-
-                            Text('@jessicaw', style: TextStyle(
-                                  fontSize: 10,
-                                  color: Colors.grey,
-                                  fontWeight: FontWeight.bold
-                              ),),
-
-
-                          ],
-
-                        ),
-                      ],
-                    ),
-                    SizedBox(height: 10,),
-                    Text('just finished a fantastic hike in mountains the views were breathtaking and the fresh air was so invigirating.feeling grateful for moments like these.#hiking #nature #mountains.',style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),),
-                    SizedBox(height: 15,),
-
-                    Image.network('https://plus.unsplash.com/premium_photo-1676218968741-8179dd7e533f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW91bnRhaW5zfGVufDB8fDB8fHww'),
-                    SizedBox(height: 15,),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Icon(Icons.heart_broken),
-                        SizedBox(width: 3,),
-                        Text('23'),
-                        SizedBox(width: 60,),
-                        Icon(Icons.comment),
-                        SizedBox(width: 3,),
-                        Text('5'),
-                        SizedBox(width: 60,),
-                        Icon(Icons.send),
-                        SizedBox(width: 3,),
-                        Text('8'),
-
-                      ],
-                    ),
-                    SizedBox(height: 15,),
-                    Row(
-                        children: [
-                          Text('23'),
-                          SizedBox(width: 3,),
-                          Text('likes'),
-                        ],
-                    ),
-                    SizedBox(height: 10,),
-                    Text('Liam Carter: Looks amazing! i need to plan a trip soon.',style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),),
-                    SizedBox(height: 8,),
-                    Text('Jessica Williams:You Should,Liam! its definitely worth it.',style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),),
-                    SizedBox(height: 10,),
-                    Row(
-                      children: [
-                        Container(
-                          height: 30,
-                          width: 30,
-                          decoration: BoxDecoration(
-                            color: Colors.orange,
-                            shape: BoxShape.circle,
-
-                          ),
-                        ),
-                        SizedBox(width: 8,),
-                        Container(
-                          padding: EdgeInsets.symmetric(horizontal: 16),
-                          height: 25,
-                          width: 200,
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.circular(20),
-
-
-
-                          ),
-
-
-
-                          child: Text('add a comment...', style: TextStyle(
-                            color: Colors.white,
-                          ),),
-
-                        ),
-
-                      ],
-                    )
-
-
-
-
-
-                      
-                  ],
-                ),
-              ),
-
+          
+          
+          title: Text('Profile',style: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),),
+          actions: [
+            Padding(padding:
+            EdgeInsets.only(right: 5),
+            child: Icon(Icons.settings)
             ),
 
+          ],
+          
+          centerTitle: true,
+          
+        ),
+        
+        
+
+
+        body: Container(
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    height: 120,
+                    width: 120,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.orange,
+                    ),
+
+
+                  ),
+
+                ],
+              ),
+              SizedBox(height: 15,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('Ethan Carter',style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                    fontSize: 30,
+                  ),),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('Product Designer',style: TextStyle(
+                    color: Colors.lightBlue,
+
+                  ),),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('San Francisco,CA',style: TextStyle(
+                    color: Colors.lightBlue,
+                  ),),
+
+                ],
+              ),
+              SizedBox(height: 25,),
+              Row(
+                children: [
+                  SizedBox(width: 10,),
+
+          Text('Skills',style: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 25,
+        ),),
+
+
+                ],
+              ),
+              SizedBox(height: 20,),
+              Row(
+                children: [
+                  SizedBox(width: 5,),
+                  Container(
+
+                    height: 30,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(10),
+
+
+
+                    ),
+                    child: Text('UI/UX design',style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),),
+                  ),
+                  SizedBox(width: 10,),
+                  Row(
+                    children: [
+                      Container(
+
+                        height: 30,
+                        width: 100,
+                        decoration: BoxDecoration(
+                          color: Colors.grey,
+                          borderRadius: BorderRadius.circular(10),
+
+
+                        ),
+                        child: Text('user Research',style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              SizedBox(height: 8,),
+              Row(
+                children: [
+                  SizedBox(width: 5,),
+                  Container(
+
+                    height: 30,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(10),
+
+
+                    ),
+                    child: Text(' Prototyping',style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),),
+                  ),
+                  SizedBox(width: 10,),
+                  Container(
+
+                    height: 30,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(10),
+
+
+                    ),
+                    child: Text(' WireFraming',style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),),
+                  ),
+
+
+                ],
+              ),
+              SizedBox(height: 8,),
+              Row(
+                children: [
+                  Container(
+
+                    height: 30,
+                    width: 140,
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(10),
+
+
+                    ),
+                    child: Text(' design systems',style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),),
+                  ),
+                  SizedBox(width: 10,),
+                  Container(
+
+                    height: 30,
+                    width: 140,
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(10),
+
+
+                    ),
+                    child: Text(' Interaction design',style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),),
+                  ),
+
+
+                ],
+              ),
+              SizedBox(height: 25,),
+              Row(
+                children: [
+                  SizedBox(width: 5,),
+                  Text('About',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),),
+                ],
+              ),
+              SizedBox(height: 10,),
+              Column(
+                children: [
+                  SizedBox(width: 5,),
+                  Text('Ethan is a product designer with 5 years of experience in creating user centre designs.he specializes in UI/UX desigm ethan is passionate about solving complex problems and creating intiutative and engaging user experiences. '),
+
+
+                ],
+              ),
+
+
+
+
+
+
+            ],
           ),
         ),
+        
+
+
 
       ),
     );
