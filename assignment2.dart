@@ -6,14 +6,11 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
       title: "Assignment1",
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          
-          
           title: Text('Profile',style: TextStyle(
             fontWeight: FontWeight.bold,
           ),),
@@ -22,17 +19,10 @@ class MyApp extends StatelessWidget {
             EdgeInsets.only(right: 5),
             child: Icon(Icons.settings)
             ),
-
           ],
-          
           centerTitle: true,
-          
         ),
-        
-        
-
-
-        body: Container(
+          body: Container(
           child: Column(
             children: [
               Row(
@@ -45,13 +35,10 @@ class MyApp extends StatelessWidget {
                       shape: BoxShape.circle,
                       color: Colors.orange,
                     ),
-
-
                   ),
-
                 ],
               ),
-              SizedBox(height: 15,),
+              SizedBox(height: 2,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -80,7 +67,7 @@ class MyApp extends StatelessWidget {
 
                 ],
               ),
-              SizedBox(height: 25,),
+              SizedBox(height: 2,),
               Row(
                 children: [
                   SizedBox(width: 10,),
@@ -89,11 +76,9 @@ class MyApp extends StatelessWidget {
           fontWeight: FontWeight.bold,
           fontSize: 25,
         ),),
-
-
                 ],
               ),
-              SizedBox(height: 20,),
+              SizedBox(height: 2,),
               Row(
                 children: [
                   SizedBox(width: 5,),
@@ -104,9 +89,6 @@ class MyApp extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: Colors.grey,
                       borderRadius: BorderRadius.circular(10),
-
-
-
                     ),
                     child: Text('UI/UX design',style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -133,19 +115,16 @@ class MyApp extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 8,),
+              SizedBox(height: 2,),
               Row(
                 children: [
                   SizedBox(width: 5,),
                   Container(
-
                     height: 30,
                     width: 100,
                     decoration: BoxDecoration(
                       color: Colors.grey,
                       borderRadius: BorderRadius.circular(10),
-
-
                     ),
                     child: Text(' Prototyping',style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -153,35 +132,27 @@ class MyApp extends StatelessWidget {
                   ),
                   SizedBox(width: 10,),
                   Container(
-
                     height: 30,
                     width: 100,
                     decoration: BoxDecoration(
                       color: Colors.grey,
                       borderRadius: BorderRadius.circular(10),
-
-
                     ),
                     child: Text(' WireFraming',style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),),
                   ),
-
-
                 ],
               ),
-              SizedBox(height: 8,),
+              SizedBox(height: 3,),
               Row(
                 children: [
                   Container(
-
                     height: 30,
                     width: 140,
                     decoration: BoxDecoration(
                       color: Colors.grey,
                       borderRadius: BorderRadius.circular(10),
-
-
                     ),
                     child: Text(' design systems',style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -202,39 +173,51 @@ class MyApp extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),),
                   ),
-
-
                 ],
               ),
-              SizedBox(height: 25,),
+              SizedBox(height: 3,),
               Row(
                 children: [
                   SizedBox(width: 5,),
                   Text('About',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),),
                 ],
               ),
-              SizedBox(height: 10,),
+              SizedBox(height: 3,),
               Column(
                 children: [
                   SizedBox(width: 5,),
                   Text('Ethan is a product designer with 5 years of experience in creating user centre designs.he specializes in UI/UX desigm ethan is passionate about solving complex problems and creating intiutative and engaging user experiences. '),
-
-
                 ],
               ),
+              SizedBox(height: 3,),
+              Row(
+                children: [
+                  Text('Contact',style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 25,
+                  ),),
+                ],
+              ),
+              SizedBox(height: 3,),
+              ListTile(
+                leading: Icon(Icons.mail),
+                title: Text('ethan.carter!gmail.com'),
+              ),
 
+              ListTile(
+                leading: Icon(Icons.call),
+                title: Text('899 82993728'),
+              ),
 
-
-
-
+              ListTile(
+                leading: Icon(Icons.link_outlined),
+                title: Text('linkedin.com/in/ethan carter'),
+              ),
+              
 
             ],
           ),
         ),
-        
-
-
-
       ),
     );
   }
